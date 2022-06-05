@@ -1,3 +1,3 @@
-# Local Storage and Local Database
+# local-js
 
 ```simple project idea with local storage and local database in javascript```
