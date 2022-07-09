@@ -1,23 +1,27 @@
-<html>
-<html>
-<head>
-</head>
+<html><html>
+<head></head>
 <body>
-
+    <h2>Local Database</h2>
+    <form onsubmit="salvar()">
+        <input type="text" id="namedb" placeholder="Name"><br>
+        <input type="password" id="passworddb" placeholder="Password"><br>
+        <input type="submit" value="Submit" id="submit">
+    </form>
+    <hr>
+    <h2>Local Storage</h2>
     <form action="">
         <input id="name" placeholder="Name"><br>
         <button type="button" onclick="save_name()">Save</button>
         <button type="button" onclick="load_name()">Load</button>
         <input type="reset" id="reset">
     </form>
-
     <form action="" id="second_form">
         <input id="password" placeholder="Password"><br>
         <button type="button" onclick="save_password()">Save</button>
         <button type="button" onclick="load_password()">Load</button>
         <input type="reset" id="reset">
     </form>
-
-    <script src="main.js"></script>
+    <script src="/database/main.js"></script>
+    <script src="/storage/main.js"></script>
 </body>
 </html>

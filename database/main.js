@@ -4,8 +4,8 @@ db.transaction(function(criar){
 });
 
 function salvar(){
-    var name = document.getElementById('name').value;
-    var password = document.getElementById('password').value;
+    var name = document.getElementById('namedb').value;
+    var password = document.getElementById('passworddb').value;
 
     db.transaction(function(armazenar){
         armazenar.executeSql("INSERT INTO main (name, password) VALUES (?,?)",[name, password]);
