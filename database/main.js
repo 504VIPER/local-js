@@ -2,6 +2,7 @@ var db = openDatabase('DataBase', "2.0", "Mybase", 4048);
 
 db.transaction(function(criar){
     criar.executeSql("CREATE TABLE main (name TEXT, password TEXT)");
+    console.log('table created')
 });
 
 function salvar(){
@@ -12,6 +13,7 @@ function salvar(){
 
     db.transaction(function(armazenar){
         armazenar.executeSql("INSERT INTO main (name, password) VALUES (?,?)",[name, password]);
+        console.log('inserted')
     });
 
 };
